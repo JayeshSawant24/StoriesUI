@@ -42,7 +42,7 @@ Local Angular App will run on http://localhost:4200/
 		example: http://localhost:28889/api/Stories/getallstories/1/20
 		
 		
-##Caching used:
+## Caching used:
 Response caching has been implemented.
 It will cache the resposne for 2 minutes.
 We cache the data of each page only when it is requested amd will be available in cache for 2 minutes (120 seconds).
@@ -50,7 +50,7 @@ We cache the data of each page only when it is requested amd will be available i
 Added Swagger to API to call api endpoint for verification
 
 
-##Local setup:
+## Local setup:
 
 Clone UI and API code from the respective repository
 open UI code in VSCode.
@@ -62,5 +62,5 @@ ng serve
 		
 
 		
-##Note: Not stories that don't have link will be displayed as bold text in black color.
+## Note: Not stories that don't have link will be displayed as bold text in black color.
 
