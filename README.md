@@ -25,3 +25,42 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+##Stories APP
+
+For the development of Stories APP we have used Angular 16 to build front-end and .Net Core WebAPI for back-end
+
+
+Front-end code is present in StoriesUI 
+Back-end code is present is StoriesAPI
+
+
+Local Angular App will run on http://localhost:4200/
+		It uses API endpoint domain as http://localhost:28889 (my local api endpoint). You can change it in environment.ts file located at src/environment/environment.ts
+		example: http://localhost:28889/api/Stories/getallstories/1/20
+		
+		
+##Caching used:
+Response caching has been implemented.
+It will cache the resposne for 2 minutes.
+We cache the data of each page only when it is requested amd will be available in cache for 2 minutes (120 seconds).
+
+Added Swagger to API to call api endpoint for verification
+
+
+##Local setup:
+
+Clone UI and API code from the respective repository
+open UI code in VSCode.
+Open terminal window and navigate to StoriesUI folder and run command "npm install" to download all the required packages to run the application.
+
+To run the application execute below command:
+ng serve
+		
+		
+
+		
+##Note: Not stories that don't have link will be displayed as bold text in black color.
+
