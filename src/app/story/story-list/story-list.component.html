@@ -1,0 +1,35 @@
+<div class="item-center" style="padding: 8px;">
+	<input type="text" placeholder="Search.." [(ngModel)]="searchText">
+</div>
+
+<div style="border:1px solid black; padding:12px;text-align: -webkit-center;">
+	<table class="table table-striped">
+	<thead>
+		<tr>
+			<th scope="col">Story List</th>
+			<!-- <th scope="col">Link</th> -->
+		</tr>
+	</thead>
+	<tbody>
+			<tr *ngFor="let story of filteredStories" >
+				<td style="border:1px solid black; padding:12px">
+					<a *ngIf="story.url; else elseUrlTemplate" target="_blank" href="{{ story.url}}">
+						{{ story.title }}
+					</a>
+					<ng-template #elseUrlTemplate>
+						<b>{{ story.title }}</b>
+					</ng-template>
+				</td>
+				<!-- <td (click)="goToStories(story)">{{ story.url}}</td> -->
+				<!-- <td><a target="_blank" href="{{ story.url}}">{{ story.url}}</a></td> -->
+			</tr>
+	</tbody>
+	</table>
+</div>
+<div class="item-center">
+	<ul>
+		<span *ngFor="let page of pages">
+			<a class="page-link" (click)="getPageData(page)">{{page}}</a>
+		</span>
+	</ul>
+</div>

@@ -1,0 +1,9 @@
+.page-link {
+    padding-right: 6px;
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+.item-center {
+  text-align: center;
+}
